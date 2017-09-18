@@ -24,7 +24,8 @@ void loop() {
     Serial.println("BUZZER OFF");
     analogWrite(A5,0);
     buttonState = LOW;
-  }else{
+  }
+  else{
        while (buttonState == LOW) {
         buttonState = digitalRead(buttonPin);
           Serial.println("BUZZER ON");
